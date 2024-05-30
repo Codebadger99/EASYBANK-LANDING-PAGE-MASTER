@@ -9,7 +9,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -196,7 +197,7 @@ nav > ul > li > a {
 }
 
 .card_img > img {
-  width: 13.8em;
+  width: 12.3em;
   height: 12em;
   border-top-left-radius: 0.4em;
   border-top-right-radius: 0.4em;
@@ -216,6 +217,8 @@ nav > ul > li > a {
   justify-content: center;
 }
 
+
+
 .card_title > p {
   font-size: 1rem;
 }
@@ -228,7 +231,8 @@ nav > ul > li > a {
 .card_title > h3 {
   color: hsl(233, 26%, 24%);
   font-weight: 400;
- margin-left: 1em;
+  margin-left: .1em;
+  
 }
 
 .card_title > h5 {
@@ -310,21 +314,20 @@ footer {
   border-radius: 3em;
 }
 
-.attribution{
+.attribution {
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2em;
-  font-size:.9em;
-  
+  font-size: 0.9em;
+
   gap: 1em;
 }
 
-.attribution > a{
+.attribution > a {
   color: wheat;
 }
-
 
 @media screen and (max-width: 1024px) {
   .footer {
@@ -339,15 +342,15 @@ footer {
     font-size: 3rem;
   }
 
-  .cards{
+  .cards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
   }
 
-  .attribution{
-    font-size:.9em;
+  .attribution {
+    font-size: 0.9em;
     gap: 1em;
   }
 }
@@ -368,10 +371,10 @@ footer {
     justify-content: center;
     background-color: hsl(0, 0%, 100%);
     width: 70vw;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
-  ul::after{
+  ul::after {
     content: "";
     opacity: 0.1;
     position: absolute;
@@ -381,9 +384,8 @@ footer {
     background-color: black;
     width: 56.6vw;
     height: 100vh;
-   padding: 10em 10em;
-   z-index: -1;
- 
+    padding: 10em 10em;
+    z-index: -1;
   }
 
   ul.active {
@@ -453,16 +455,15 @@ footer {
     font-size: 3rem;
   }
 
- 
   .latest > h1 {
     text-align: center;
   }
 
-  .second_footer,.third_footer{
+  .second_footer,
+  .third_footer {
     display: none;
   }
 
-  
   .footer {
     display: flex;
     flex-direction: column;
@@ -478,22 +479,22 @@ footer {
     justify-content: center;
   }
 
-  .about_img{
+  .about_img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .attribution{
-    font-size:.9em;
+  .attribution {
+    font-size: 0.9em;
     gap: 1em;
   }
 }
 
 @media screen and (max-width: 425px) {
-  ul::after{
-   left: -14em;
+  ul::after {
+    left: -14em;
   }
-  
+
   .about_text > h1 {
     text-align: center;
   }
@@ -507,29 +508,29 @@ footer {
     flex-direction: column;
   }
 
-  .about_img{
+  .about_img {
     display: flex;
     flex-direction: column;
   }
 
-  .attribution{
-    font-size:.9em;
+  .attribution {
+    font-size: 0.9em;
     flex-direction: column;
     gap: 1em;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .header_content_img{
+  .header_content_img {
     background-image: url(./images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: center 50%;
   }
 
-  ul::after{
+  ul::after {
     left: -14.37em;
-   }
-   
+  }
+
   .header_content_about > h1 {
     font-size: 2rem;
   }
@@ -543,25 +544,24 @@ footer {
     flex-direction: column;
   }
 
-  .attribution{
-    font-size:.9em;
+  .attribution {
+    font-size: 0.9em;
     flex-direction: column;
     gap: 1em;
   }
-
 }
 
 @media screen and (max-width: 320px) {
-  ul::after{
+  ul::after {
     left: -15em;
-   }
+  }
 
   .header_content_img > img {
     width: 17em;
   }
 
-  .attribution{
-    font-size:.9em;
+  .attribution {
+    font-size: 0.9em;
     flex-direction: column;
     gap: 1em;
   }
