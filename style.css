@@ -192,7 +192,7 @@ nav > ul > li > a {
   height: 27em;
   background-color: white;
   border-radius: 0.4em;
-  padding: 0.4em;
+  padding: 0.5em 0.4rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -217,8 +217,6 @@ nav > ul > li > a {
   justify-content: center;
 }
 
-
-
 .card_title > p {
   font-size: 1rem;
 }
@@ -231,8 +229,7 @@ nav > ul > li > a {
 .card_title > h3 {
   color: hsl(233, 26%, 24%);
   font-weight: 400;
-  margin-left: .1em;
-  
+  margin-left: 0.1em;
 }
 
 .card_title > h5 {
